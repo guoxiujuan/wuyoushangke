@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>reg</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/cui.css" />
+	<link rel="stylesheet" href="css/lib.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+    <!-- 头部 -->
+    <div id="hd">
+        <div class="wp">
+            <a href="" class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="welc">你好，欢迎来到无忧上课！<a href="">请登录</a></div>
+        </div>
+    </div>
+    <!-- 头部 end-->
+
+    <!-- 主内容 -->
+    <div id="bd">
+        <div class="wp">
+            <div class="m-reg">
+                <h3>学生注册</h3>
+                <div class="txt">
+                    <form action="">
+                        <table>
+                            <tr>
+                                <th>手机号：</th>
+                                <td><input class="inp1" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>短信验证码：</th>
+                                <td><input class="inp2" type="text"><input type="button" id="phone-btn" value="获取验证码" /></td>
+                            </tr>
+                            <tr>
+                                <th>邮箱：</th>
+                                <td><input class="inp1" type="text"></td>
+                            </tr>
+                            <tr>
+                                <th>设置密码：</th>
+                                <td><input class="inp1" type="password"></td>
+                            </tr>
+                            <tr>
+                                <th>确认密码：</th>
+                                <td>
+                                    <input class="inp1" type="password">
+                                    <p class="s-tip">密码长度8-16位，数字、字母、字符至少包含两种</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <!-- 邀请码 -->
+                                    <div class="invi-code"  role="checkbox">
+                                        <label><input class="checkbox" type="checkbox"><span>邀请码（选填）</span></label>
+                                        <em>已有账号，<a href="">请登录</a></em>
+                                        <input class="inp1" type="text">
+                                    </div>
+                                    <!-- 邀请码 end-->
+                                    <p>点击“提交注册”即表示您已阅读并同意遵守无忧上课网站条款</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td><input class="sub" type="submit" value="提交注册"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="pic"><img src="images/pic01.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- 主内容 end-->
+
+    <!-- 底部 -->
+    <div id="fd2">
+        <div class="wp">
+            <div class="f-cont"><span>合作邮箱：<a href="">simon@51shangke.com</a></span>　　/　　<span>联系地址：<em>上海市南蕰藻路408号智力产业园3幢1楼</em></span></div>
+            <div class="f-copy">©2017 无忧上课 版权所有 沪ICP备16011154号</div>
+        </div>
+    </div>
+    <!-- 底部 end-->
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+    <script>
+        $('.m-reg table .invi-code label').click(function() {
+            if($(this).hasClass('checked')){
+                $(this).parent('.m-reg table .invi-code').find('.inp1').css('display','none');
+            }else{
+                $(this).parent('.m-reg table .invi-code').find('.inp1').css('display','block');
+            };
+        });
+    </script>
+    <script type="text/javascript">  
+        var wait = 60;  
+        document.getElementById("phone-btn").disabled = false;  
+        function time(o) {  
+           if (wait == 0) {  
+               o.removeAttribute("disabled");  
+               //$(o).attr("disabled", false);  jquery  
+               o.value = "发送手机验证码";  
+               wait = 60;  
+           } else {  
+               o.setAttribute("disabled", true);  
+               o.value = wait + "秒后,重试";  
+               wait--;  
+               setTimeout(function () {  
+                   time(o)  
+               },  
+        1000)  
+           }  
+        }  
+        document.getElementById("phone-btn").onclick =  
+          function () {  
+              time(this);  
+          }  
+    </script> 
+	
+</body>
+</html>

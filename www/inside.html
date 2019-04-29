@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>inside</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/cui.css" />
+	<link rel="stylesheet" href="css/lib.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+    <!-- 头部 -->
+    <div id="hd">
+        <div class="wp">
+            <a href="" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul class="nav">
+                <li class="on"><a href="">我的课表</a></li>
+                <li><a href="">我的课程</a></li>
+                <li><a href="">我的账户</a></li>
+                <li><a href="">充值</a></li>
+            </ul>
+            <div class="user">
+                <div class="pic"><a href=""><img src="images/pic02.jpg" alt=""></a></div>
+                <h5><a href=""><span>崔健</span></a></h5>
+                <ul>
+                    <li><a href="">账号设置</a></li>
+                    <li class="last"><a href="">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 头部 end-->
+
+    <!-- 主内容 -->
+    <div id="bd">
+        <div class="wp">
+            <div class="row">
+                <!-- 左侧 -->
+                <div class="side-col">  
+                    <div class="m-user1">
+                        <div class="face">
+                            <a href=""><img src="images/gimg1.jpg" alt=""></a>
+                        </div>
+                        <h5>崔健</h5>
+                        <p>ID:12323231</p>
+                    </div>                 
+                    <ul class="snav">
+                        <li class="on"><a href=""><i class="icon1"></i>我的课表</a></li>
+                        <li><a href=""><i class="icon2"></i>我的播放</a></li>
+                        <li><a href=""><i class="icon3"></i>我的老师</a></li>
+                        <li><a href=""><i class="icon4"></i>我的订单</a></li>
+                        <li><a href=""><i class="icon5"></i>我的设置</a></li>
+                    </ul>
+                </div>
+                <!-- 左侧 end-->
+                <!-- 右侧 -->
+                <div class="main-col" style="background-color:#fff;">
+                    <div class="inner">
+                        <ul class="m-tab2 m-tab2-1 TAB" id=".tab-show">
+                            <li class="hover"><a href="javascript:void(0);">本月课程</a></li>
+                            <li><a href="javascript:void(0);">本月待上课程</a></li>
+                        </ul>
+                        <!-- 日历 -->
+                        <div class="m-cale">
+                            <div class="Calendar">
+                                <!-- 日历 -->
+                                  <table cellspacing="0">
+                                    <thead>
+                                      <tr>
+                                        <td>周日</td>
+                                        <td>周一</td>
+                                        <td>周二</td>
+                                        <td>周三</td>
+                                        <td>周四</td>
+                                        <td>周五</td>
+                                        <td>周六</td>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="idCalendar">
+                                    </tbody>
+                                  </table>
+                                  <!-- 日历 end -->
+                            </div>
+
+                            <!-- 月份页码 -->
+                            <div class="page">
+                                <a class="a-prev" onClick="cale.PreMonth();"></a>
+                                <div class="date-tit">
+                                    <span id="idCalendarYear"></span> 年
+                                    <span id="idCalendarMonth"></span> 月
+                                </div>
+                                <a class="a-next" onClick="cale.NextMonth();"></a>
+                                <div class="today"><span>29</span><em>周四</em></div>
+                            </div>
+                            <!-- 月份页码 end -->
+                        </div>
+                        <!-- 日历 end-->
+                        <div class="tab-show">
+                            <ul class="ul-list3">
+                                <li>
+                                    <div class="g-title">
+                                        <div class="teacher">老师：徐峥亮</div>
+                                        <div class="time"><span><em>2016-12-21</em></span><span>1课程编号：<em>1512121861</em></span></div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="m-user3">
+                                            <div class="face">
+                                                <a href=""><img src="images/gimg1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="user-mess">
+                                                <h5>高中英语专题</h5>
+                                                <span>在线授课</span>
+                                                <a href="">班课</a>
+                                            </div>
+                                        </div>
+                                        <div class="class-data">
+                                            <p>12月30日</p>
+                                            <h5>14:00-16:00</h5>
+                                            <span><em>2.00</em>小时</span>
+                                        </div>
+                                        <div class="state">
+                                            <span>待上课</span>
+                                            <a href="">进入课堂<i></i></a>
+                                        </div>
+                                        <div class="mess">
+                                            <div class="box">
+                                                <div class="rig_2" >
+                                                    <div  id='circleProgress1' value="16.0"><p><span>335</span>/336</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>总课时：226</p>
+                                                    <p><em>未完成：1课时</em></p>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="rig_3" >
+                                                    <div  id='circleProgress12' value="16.0"><p><span>6</span>分</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>上课时间：</p>
+                                                    <p>2016-12-29 14:30</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="g-title">
+                                        <div class="teacher">老师：徐峥亮</div>
+                                        <div class="time"><span><em>2016-12-21</em></span><span>课程编号：<em>1512121861</em></span></div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="m-user3">
+                                            <div class="face">
+                                                <a href=""><img src="images/gimg1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="user-mess">
+                                                <h5>高中英语专题</h5>
+                                                <span>在线授课</span>
+                                                <a href="">班课</a>
+                                            </div>
+                                        </div>
+                                        <div class="class-data">
+                                            <p>12月30日</p>
+                                            <h5>14:00-16:00</h5>
+                                            <span><em>2.00</em>小时</span>
+                                        </div>
+                                        <div class="state">
+                                            <span>待上课</span>
+                                            <a href="">进入课堂<i></i></a>
+                                        </div>
+                                        <div class="mess">
+                                            <div class="box">
+                                                <div class="rig_2" >
+                                                    <div  id='circleProgress13' value="16.0"><p><span>335</span>/336</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>总课时：226</p>
+                                                    <p><em>未完成：1课时</em></p>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="rig_3" >
+                                                    <div  id='circleProgress14' value="16.0"><p><span>6</span>分</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>上课时间：</p>
+                                                    <p>2016-12-29 14:30</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="g-title">
+                                        <div class="teacher">老师：徐峥亮</div>
+                                        <div class="time"><span><em>2016-12-21</em></span><span>课程编号：<em>1512121861</em></span></div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="m-user3">
+                                            <div class="face">
+                                                <a href=""><img src="images/gimg1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="user-mess">
+                                                <h5>高中英语专题</h5>
+                                                <span>在线授课</span>
+                                                <a href="">班课</a>
+                                            </div>
+                                        </div>
+                                        <div class="class-data">
+                                            <p>12月30日</p>
+                                            <h5>14:00-16:00</h5>
+                                            <span><em>2.00</em>小时</span>
+                                        </div>
+                                        <div class="state">
+                                            <span>待上课</span>
+                                            <a href="">进入课堂<i></i></a>
+                                        </div>
+                                        <div class="mess">
+                                            <div class="box">
+                                                <div class="rig_2" >
+                                                    <div  id='circleProgress15' value="16.0"><p><span>335</span>/336</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>总课时：226</p>
+                                                    <p><em>未完成：1课时</em></p>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="rig_3" >
+                                                    <div  id='circleProgress16' value="16.0"><p><span>6</span>分</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>上课时间：</p>
+                                                    <p>2016-12-29 14:30</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-show dn">
+                            <ul class="ul-list3">
+                                <li>
+                                    <div class="g-title">
+                                        <div class="teacher">老师：徐峥亮</div>
+                                        <div class="time"><span><em>2016-12-21</em></span><span>2课程编号：<em>1512121861</em></span></div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="m-user3">
+                                            <div class="face">
+                                                <a href=""><img src="images/gimg1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="user-mess">
+                                                <h5>高中英语专题</h5>
+                                                <span>在线授课</span>
+                                                <a href="">班课</a>
+                                            </div>
+                                        </div>
+                                        <div class="class-data">
+                                            <p>12月30日</p>
+                                            <h5>14:00-16:00</h5>
+                                            <span><em>2.00</em>小时</span>
+                                        </div>
+                                        <div class="state">
+                                            <span>待上课</span>
+                                            <a href="">进入课堂<i></i></a>
+                                        </div>
+                                        <div class="mess">
+                                            <div class="box">
+                                                <div class="rig_2" >
+                                                    <div  id='circleProgress2' value="16.0"><p><span>335</span>/336</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>总课时：226</p>
+                                                    <p><em>未完成：1课时</em></p>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="rig_3" >
+                                                    <div  id='circleProgress5' value="16.0"><p><span>6</span>分</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>上课时间：</p>
+                                                    <p>2016-12-29 14:30</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="g-title">
+                                        <div class="teacher">老师：徐峥亮</div>
+                                        <div class="time"><span><em>2016-12-21</em></span><span>课程编号：<em>1512121861</em></span></div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="m-user3">
+                                            <div class="face">
+                                                <a href=""><img src="images/gimg1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="user-mess">
+                                                <h5>高中英语专题</h5>
+                                                <span>在线授课</span>
+                                                <a href="">班课</a>
+                                            </div>
+                                        </div>
+                                        <div class="class-data">
+                                            <p>12月30日</p>
+                                            <h5>14:00-16:00</h5>
+                                            <span><em>2.00</em>小时</span>
+                                        </div>
+                                        <div class="state">
+                                            <span>待上课</span>
+                                            <a href="">进入课堂<i></i></a>
+                                        </div>
+                                        <div class="mess">
+                                            <div class="box">
+                                                <div class="rig_2" >
+                                                    <div  id='circleProgress3' value="16.0"><p><span>335</span>/336</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>总课时：226</p>
+                                                    <p><em>未完成：1课时</em></p>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="rig_3" >
+                                                    <div  id='circleProgress6' value="16.0"><p><span>6</span>分</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>上课时间：</p>
+                                                    <p>2016-12-29 14:30</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="g-title">
+                                        <div class="teacher">老师：徐峥亮</div>
+                                        <div class="time"><span><em>2016-12-21</em></span><span>课程编号：<em>1512121861</em></span></div>
+                                    </div>
+                                    <div class="con">
+                                        <div class="m-user3">
+                                            <div class="face">
+                                                <a href=""><img src="images/gimg1.jpg" alt=""></a>
+                                            </div>
+                                            <div class="user-mess">
+                                                <h5>高中英语专题</h5>
+                                                <span>在线授课</span>
+                                                <a href="">班课</a>
+                                            </div>
+                                        </div>
+                                        <div class="class-data">
+                                            <p>12月30日</p>
+                                            <h5>14:00-16:00</h5>
+                                            <span><em>2.00</em>小时</span>
+                                        </div>
+                                        <div class="state">
+                                            <span>待上课</span>
+                                            <a href="">进入课堂<i></i></a>
+                                        </div>
+                                        <div class="mess">
+                                            <div class="box">
+                                                <div class="rig_2" >
+                                                    <div  id='circleProgress4' value="16.0"><p><span>335</span>/336</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>总课时：226</p>
+                                                    <p><em>未完成：1课时</em></p>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="rig_3" >
+                                                    <div  id='circleProgress7' value="16.0"><p><span>6</span>分</p></div>
+                                                </div>
+                                                <div class="txt">
+                                                    <p>上课时间：</p>
+                                                    <p>2016-12-29 14:30</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右侧 end-->
+            </div>
+        </div>
+    </div>
+    <!-- 主内容 end-->
+
+                                    
+
+    <!-- 底部 -->
+    <div id="fd">
+        <div class="wp">
+            <div class="tel"><em>400-8986-990</em>（09:00 - 21:00 北京时间） </div>
+            <div class="download"><a href="">浏览器下载</a></div>
+            <div class="fd-l">
+                <div class="f-cont"><span>合作邮箱：<a href="">simon@51shangke.com</a></span>　/　<span>联系地址：<em>上海市南蕰藻路408号智力产业园3幢1楼</em></span></div>
+                <div class="f-copy">©2017 无忧上课 版权所有 沪ICP备16011154号</div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部 end-->
+
+
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lib.js"></script>
+    // <script>
+    //     $(".Calendar table td").click(function() {
+    //         var _num = $(this).text();
+    //         $(this).css('background-color','#34abf1');
+    //         $(this).addClass('click');
+    //         $(".page .today span").text(_num);
+    //     });
+    // </script>
+     
+    <script type="text/javascript" src="js/raphael.js"></script>
+    <script type="text/javascript" src="js/circleProgressBar.js"></script> 
+    <script>
+        $(document).ready(function(){ 
+            //依赖jquery.js、raphael.js、circleProgressBar.js
+            //参数定义
+            //1、要显示进度条的div
+            //2、要显示的百分比
+            //3、圆环的半径（单位：px）
+            //4、圆环的宽度（单位：px）
+            //5、（可选）圆环内文字的字体大小，默认值是半径/2
+            //6、（可选）圆环颜色，默认值#cf0033
+            //6、（可选）圆环背景色，默认值#ffcccc         
+
+             $('.rig_2').each(function(){
+                var _percent = $(this).children('div').attr('value');
+                var _sub = $(this).children('div').attr('id');
+                 circleProgressBar(_sub,_percent,38,5,14,'#1cc75c');
+             });
+             $('.rig_3').each(function(){
+                var _percent = $(this).children('div').attr('value');
+                var _sub = $(this).children('div').attr('id');
+                 circleProgressBar(_sub,_percent,38,5,14,'#ff9600');
+             });
+        });
+    </script>
+
+    <script type="text/javascript" src="js/date.js"></script>
+    
+	
+</body>
+</html>
